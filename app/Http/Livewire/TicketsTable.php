@@ -27,6 +27,22 @@ class TicketsTable extends DataTableComponent
         //TIEMPO DE ESPERA ENTRE CADA INSERCION QUE HAGA BUSQUEDAS EN LA BDD
 
 
+
+
+
+        //EXPORTAR A EXCEL
+        public function bulkActions(): array
+        {
+            return [
+                'export' => 'Exportar',
+                'deleteSelected' => 'Eliminar',
+            ];
+        }
+                //EXPORTAR A EXCEL
+
+
+
+
     public function columns(): array
     {
         return [
