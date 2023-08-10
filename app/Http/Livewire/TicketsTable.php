@@ -12,6 +12,13 @@ use Rappasoft\LaravelLivewireTables\Views\Filters\DateFilter;
 //IMPORTAMOS ESTO PARA LOS BOTONES DE EDITAR Y ELIMINAR
 
 
+//IMPORTAMOS EL FORMATO EXCEL
+use App\Exports\TicketsExport;
+use Maatwebsite\Excel\Facades\Excel;
+//IMPORTAMOS EL FORMATO EXCEL
+
+
+
 class TicketsTable extends DataTableComponent
 {
     protected $model = Ticket::class;
